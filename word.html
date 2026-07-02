@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Tools</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:40px;
+            font-family:Arial;
+            background:#f7f9fc;
+            text-align:center;
+        }
+
+        h1{
+            font-size:50px;
+            color:#ff7a00;
+            margin-bottom:30px;
+        }
+
+        .tool{
+            background:white;
+            width:500px;
+            margin:25px auto;
+            padding:35px;
+            border-radius:20px;
+            box-shadow:0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        h2{
+            margin-bottom:15px;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            border-radius:10px;
+            border:1px solid #ccc;
+            margin-bottom:10px;
+        }
+
+        button{
+            padding:15px 30px;
+            border:none;
+            border-radius:12px;
+            background:linear-gradient(135deg,#ff7a00,#ff3d00);
+            color:white;
+            font-size:18px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            transform:scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Word Tools 📝</h1>
+
+<!-- PDF TO WORD -->
+<div class="tool">
+    <h2>PDF → Word</h2>
+
+    <form action="/pdf-to-word" method="POST" enctype="multipart/form-data">
+        <input type="file" name="pdf" accept=".pdf" required>
+        <button type="submit">Convert to Word</button>
+    </form>
+</div>
+
+<!-- WORD TO PDF -->
+<div class="tool">
+    <h2>Word → PDF</h2>
+
+    <form action="/word-to-pdf" method="POST" enctype="multipart/form-data">
+        <input type="file" name="docx" accept=".docx" required>
+        <button type="submit">Convert to PDF</button>
+    </form>
+</div>
+
+<!-- DOCX TO TXT -->
+<div class="tool">
+    <h2>DOCX → TXT</h2>
+
+    <form action="/docx-to-txt" method="POST" enctype="multipart/form-data">
+        <input type="file" name="docx" accept=".docx" required>
+        <button type="submit">Convert to TXT</button>
+    </form>
+</div>
+
+</body>
+</html>
