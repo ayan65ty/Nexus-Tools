@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nexus Tools</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f7f9fc;
+        }
+
+        .navbar{
+            background:white;
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            box-shadow:0 2px 15px rgba(0,0,0,0.08);
+        }
+
+        .logo{
+            font-size:30px;
+            font-weight:bold;
+            color:#2563eb;
+        }
+
+        .hero{
+            text-align:center;
+            padding:70px 20px;
+        }
+
+        .hero h1{
+            font-size:60px;
+            color:#0f172a;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:22px;
+            color:#475569;
+        }
+
+        .tools{
+            width:90%;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:30px;
+            padding-bottom:60px;
+        }
+
+        .card{
+            background:white;
+            padding:45px;
+            border-radius:25px;
+            box-shadow:0 8px 25px rgba(0,0,0,0.08);
+            transition:0.3s;
+            text-align:center;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card h2{
+            margin-bottom:15px;
+            color:#0f172a;
+        }
+
+        .card p{
+            color:#64748b;
+        }
+
+        a{
+            text-decoration:none;
+        }
+
+        .ads{
+            width:90%;
+            margin:auto;
+            background:white;
+            padding:40px;
+            text-align:center;
+            border-radius:20px;
+            box-shadow:0 8px 25px rgba(0,0,0,0.08);
+            margin-bottom:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">Nexus Tools</div>
+</div>
+
+<section class="hero">
+    <h1>All Document Tools In One Place</h1>
+    <p>PDF, Excel, Word and Scanner Tools</p>
+</section>
+
+<div class="tools">
+
+    <a href="/pdf">
+        <div class="card">
+            <h2>📄 PDF Tools</h2>
+            <p>Merge, Split, Compress PDFs</p>
+        </div>
+    </a>
+
+    <a href="/excel">
+        <div class="card">
+            <h2>📊 Excel Tools</h2>
+            <p>Convert & Clean Excel Files</p>
+        </div>
+    </a>
+
+    <a href="/word">
+        <div class="card">
+            <h2>📝 Word Tools</h2>
+            <p>Word to PDF and more</p>
+        </div>
+    </a>
+
+    <a href="/scanner">
+        <div class="card">
+            <h2>📷 Scanner</h2>
+            <p>Scan documents instantly</p>
+        </div>
+    </a>
+
+</div>
+
+<div class="ads">
+    Thank you for patronizing us
+</div>
+
+</body>
+</html>
